@@ -1,0 +1,5 @@
+numero = int(input("Digite um número: "))
+if numero%9:
+    print(numero, "não é um número multiplo de 9.")
+else:
+    print(numero, "é numero multiplo de 9.")
