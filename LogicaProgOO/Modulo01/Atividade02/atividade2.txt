@@ -1,0 +1,16 @@
+Lógica de Programação e Orientação a Objetos
+
+exercicio 2
+
+Sabendo que o professor tem dificuldade de memorizar, 
+informe como ele descobriu a cadeira em que houve a troca de alunos 
+e qual a disciplina de cada um.
+
+
+no anexo 2 tem um padrão tanto na horizontal como na vertical de 4+2!
+
+ex: 4 alunos de matematica e 2 de portugues ou 4 de portugues e 2 de matematica!
+
+assim ele soube da troca da cadeira de matematica pela a de portugues!
+
+mais sabendo da dificuldade do professor de memorizar ele n percebeu que nao teve a troca de cadeira e sim so da materia q o aluno gostava!

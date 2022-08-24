@@ -1,0 +1,71 @@
+ algoritimo Escolerveiculo
+	inicio
+	    Veiculovar: inteiro
+	    escreva("responda as perguntas para encontra seu veiculo")
+	    escreva("seu veiculo é terrestre ?")
+	    escreva("digite: ")
+	    escreva("y. sim")
+	    escreva("x. não")
+	    leia(Veiculovar)
+	    se (Veiculovar = y) entao
+		escreva("cabe apenas uam pessoa ?")
+		escreva("y. sim")
+		escreva("x. não")
+		leia(Veiculovar)
+		se (veiculo = y) entao
+		  escreva("é pesado ?")	
+		  escreva("y. sim")
+		  escreva("x. não")
+		  leia(Veiculovar)
+		  se (veiculo = y) entao
+			escreva("Então o transporte foi o trator.")
+		  senao
+			escreva("tem pedal ?")
+			escreva("y. sim")
+			escreva("x. não")
+			leia(Veiculovar)	
+			se (veiculo = y) entao
+			  escreva("Enttão o transporte foi a bicicleta.")
+		     senao
+			  escreva(" veiculo não encontrado")	
+		     Fimse
+ 		  Fimse
+	     senao
+		escreva("usa capacete")
+		escreva("y. sim")
+		escreva("x. não")
+		leia(Veiculovar)
+		se (veiculo = y) entao
+			escreva("Então o transporte foi a moto.")
+	     senao
+		escreva("tem passageiro ?")
+		escreva("y. sim)
+		escreva("x. nao")
+		leia(Veiculovar)
+		se (veiculo = 1) entao
+		     	escreva("usa trilho ?")
+			escreva("y. sim")
+			escreva("x. não")
+			leia(Veiculovar)
+			se ( veiculo = y) entao
+				escreva("Então o transporte foi o trem.")
+		    	Fimse
+		Fimse
+	senao
+		escreva("andar na pista ?")
+		escreva("y. sim")
+		escreva("x. não")
+		leia(Veiculovar)
+		se (veiculo = y) entao
+			escreva("È veiculo leve ?")
+			escreva("y. sim")
+			escreva("x. não")
+			leia(Veiculovar)
+			se ( veiculo = y) entao
+				escreva(" então p transporte foi um carro.")
+			Fimse
+		Fimse
+	
+			
+		
+		     
