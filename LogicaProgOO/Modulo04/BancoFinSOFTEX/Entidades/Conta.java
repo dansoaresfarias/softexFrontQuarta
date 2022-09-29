@@ -9,6 +9,65 @@ public class Conta {
     private double saldo;
     private double limite;
     private Date dataIni;
+
+    public Conta(String numero, Cliente cliente, Agencia agencia, double saldo, double limite, Date dataIni) {
+        this.numero = numero;
+        this.cliente = cliente;
+        this.agencia = agencia;
+        this.saldo = saldo;
+        this.limite = limite;
+        this.dataIni = dataIni;
+    }
+
+    public boolean depositar(double valor){
+        if(valor<0){
+            return false;
+        }else{
+            this.saldo += valor;
+            return true;
+        }        
+    }
+
+    public boolean sacar(double valor){
+        if((this.saldo + this.limite)<valor){
+            return false;
+        }else {
+            this.saldo -= valor;
+            return true;
+        }
+    }
     
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public Agencia getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(Agencia agencia) {
+        this.agencia = agencia;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public double getLimite() {
+        return limite;
+    }
+
+    public void setLimite(double limite) {
+        this.limite = limite;
+    }
+
+    public Date getDataIni() {
+        return dataIni;
+    }
 
 }
