@@ -9,6 +9,7 @@ public class Conta {
     private double saldo;
     private double limite;
     private Date dataIni;
+    private static int totalContas = 0;
 
     public Conta(String numero, Cliente cliente, Agencia agencia, double saldo, double limite, Date dataIni) {
         this.numero = numero;
@@ -17,6 +18,7 @@ public class Conta {
         this.saldo = saldo;
         this.limite = limite;
         this.dataIni = dataIni;
+        this.totalContas++;
     }
 
     public boolean depositar(double valor){
@@ -37,6 +39,15 @@ public class Conta {
         }
     }
     
+    public boolean transfesrir(double valor, Conta contaFav){
+        if((this.saldo + this.limite) >= valor){
+            this.saldo -= valor;
+            contaFav.saldo += valor;
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     public String getNumero() {
         return numero;
@@ -68,6 +79,10 @@ public class Conta {
 
     public Date getDataIni() {
         return dataIni;
+    }
+
+    public static int getTotalContas() {
+        return totalContas;
     }
 
 }
