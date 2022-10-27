@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css" media="screen,projection" />
+
+    <link rel="icon" type="image/x-icon" href="./img/pngtree-vector-resume-icon-png-image_931187.jpg">
+    <title>Curriculo Elizabeth Cristina</title>
+</head>
+
+<body>
+    <div class="row container">
+        <div class="col s4 center">
+            <button class="btn-small pink lighten-3" onclick="menu('identificacao')">Identicação</button>
+        </div>
+        <div class="col s4 center">
+            <button class="btn-small pink lighten-3" onclick="menu('formacao')">Formação</button>
+        </div>
+        <div class="col s4 center">
+            <button class="btn-small pink lighten-3" onclick="menu('experiencia')">Experiência Profissional</button>
+        </div>
+    </div>
+    <div class="center container">
+        <h1>Elizabeth Cristina da Silva</h1>
+        <img class="circle" width="200" height="200" src="./img/elizabeth.jpg">
+        <hr>
+    </div>    
+    <div class="container" id="identificacao">
+        <h3>Identificação:</h3>
+        <ul class="container">
+            <li class="flow-text"><strong>Email:</strong> elizabethcristina2908@gmail.com</li>
+            <li class="flow-text"><strong>Telefone:</strong> (81)985499293</li>
+        </ul>
+        <br>
+        <div class="row center">
+            <a class="waves-effect waves-light btn pink lighten-3" href="https://github.com/Elizabethcristina10"
+                target="_blank">
+                <i class="material-icons left">cloud</i> GitHub
+            </a>
+            <a class="waves-effect waves-light btn pink lighten-3"
+                href="https://www.linkedin.com/in/elizabeth-cristina-376250140/" target="_blank">
+                Linkedin
+            </a>
+            <button class="waves-effect waves-light btn pink lighten-3" onclick="alert('Em breve!');">Instagram</button>
+        </div>
+        <hr>
+    </div>
+    <div id="formacao" class="container">
+        <h3>Formação:</h3>
+        <ul id="listaFormacao" class="container">
+            <li id="graduacao" class="flow-text"><strong>Graduação:</strong> Secretariado - UFPE - 2017</li>
+            <li id="ingles" class="flow-text"><strong>Idiomas:</strong> Inglês Avançado - Senac - 2021</li>
+            <li id="extensao" class="flow-text"><strong>Curso de Extensão:</strong> FAP: Front-end - Softex - 2022</li>
+        </ul>
+        <hr>
+    </div>
+    <div class="container" id="experiencia">
+        <h3>Experiência:</h3>
+        <table class="container responsive-table highlight centered">
+            <tr class="pink lighten-4">
+                <th class="center ">Função</th>
+                <th class="center ">Instituição</th>
+                <th class="center ">Período</th>
+            </tr>
+            <tr>
+                <td>Telemarketing</td>
+                <td>Liq</td>
+                <td>out/2011 a mar/2016</td>
+            </tr>
+            <tr>
+                <td>Secretária Executiva</td>
+                <td>Ministério Público Federal</td>
+                <td>jan/2017 a ago/2017</td>
+            </tr>
+            <tr>
+                <td>Auxiliar Administrativo</td>
+                <td>Softex Recife</td>
+                <td>set/2017 a --</td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    <script type="text/javascript" src="./js/elizabethCris.js"></script>
+    <!--JavaScript Materialize-->
+    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
