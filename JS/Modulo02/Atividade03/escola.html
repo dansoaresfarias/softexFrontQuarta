@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/JS/Modulo00/materialize/css/materialize.min.css">
+    <title>Atividade 03 | Modulo 2 de JS - SOFTEX</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="center">Atividade 03 | Modulo 2 de JS - SOFTEX</h3>
+        <form class="container">
+            <fieldset>
+                <legend><b>Média do Aluno</b></legend>
+                <div class="container">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="nota1" type="number" class="validate">
+                            <label for="nota1">1º Nota</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="nota2" type="number" class="validate">
+                            <label for="nota2">2º Nota</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="nota3" type="number" class="validate">
+                            <label for="nota3">3º Nota</label>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button type="button" onclick="media();">Calcular Média</button>
+                    </div>      
+                    <p id="media" class="center"></p>
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <form class="container">
+            <fieldset>
+                <legend><b>Quanto o Aluno Precisa para Passar?</b></legend>
+                <div class="container">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="notafaltante1" type="number" class="validate">
+                            <label for="notafaltante1">1º Nota</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="notafaltante2" type="number" class="validate">
+                            <label for="notafaltante2">2º Nota</label>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button type="button" onclick="notaFaltante();">Quanto preciso?</button>
+                    </div>      
+                    <p id="notaFaltante" class="center"></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="/JS/Modulo00/materialize/js/materialize.min.js"></script>
+<script src="escola.js"></script>
+
+</html>

@@ -19,6 +19,8 @@ public class Principal {
         Conta contaBeth = new Conta("12345-6", beth, softex, 1208, 800, new Date());
         Conta contaCarlos = new Conta("12389-6", carlos, softex, 808, 800, new Date());
         Conta contaMarcelo = new Conta("12356-6", marcelo, softex, 2345.90, 1000, new Date());
+        Conta contaDanilo = contaMarcelo.clone();
+
         contaBeth.depositar(500);
         contaCarlos.depositar(4500);
         contaCarlos.sacar(500);

@@ -21,6 +21,10 @@ public class Conta {
         this.totalContas++;
     }
 
+    public Conta(){
+
+    }
+
     public boolean depositar(double valor){
         if(valor<0){
             return false;
@@ -83,6 +87,17 @@ public class Conta {
 
     public static int getTotalContas() {
         return totalContas;
+    }
+
+    public Conta clone(){
+        Conta clone = new Conta();
+        clone.numero = this.numero;
+        clone.cliente = this.cliente;
+        clone.agencia = this.agencia;
+        clone.saldo = this.saldo;
+        clone.limite = this.limite;
+        clone.dataIni = this.dataIni;
+        return clone;
     }
 
 }
