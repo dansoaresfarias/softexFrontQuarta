@@ -23,6 +23,7 @@ function dividir() {
         if(num2 == 0) throw "Não pode dividir por ZERO!"
         document.getElementById("resultado").innerHTML = "<b>Resultado: </b>" + (num1 / num2);
     } catch (error) {
+        document.getElementById("resultado").innerHTML = "";
         alert(error);
     }
 }
