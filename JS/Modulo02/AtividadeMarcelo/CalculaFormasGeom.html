@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/JS/Modulo00/curriculoBeth/materialize/css/materialize.min.css">
+    <title>Formas Geométricas SOFTEX</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="center">Calculadora Formas Geométricas - SOFTEX</h3>
+        <form class="container">
+            <fieldset>
+                <legend><b>&nbsp Cálculo das Esfera &nbsp</b></legend>
+                <div class="container">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="raio" type="number" class="validate">
+                            <label for="raio">Raio</label>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button type="button" onclick="calcCircu();">Circunferência</button>&nbsp 
+                        <button type="button" onclick="calcArea();">Área</button>&nbsp 
+                        <button type="button" onclick="calcVol();">Volume</button>
+                    </div>
+                    <p id="resultadoEsf" class="center"></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="/JS/Modulo00/curriculoBeth/materialize/js/materialize.min.js"></script>
+<script src="marcelo.js"></script>
+
+</html>
